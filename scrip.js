@@ -1,34 +1,36 @@
-var but1 = window.document.getElementById('but1') // Variavel para acessar e ter controle sobre Primeiro Campo
-  var but2 = window.document.getElementById('but2') //Variavel para acessar e ter controle sobre Segundo campo
-    var but3 = window.document.getElementById('but3') //Variavel para acessar e ter controle sobre terceiro campo
-      var but4 = window.document.getElementById('but4') //Variavel para acessar e ter controle sobre quarto Campo
-        var but5 = window.document.getElementById('but5') //Variavel para acessar e ter controle sobre Quinto Campo
-          var but6 = window.document.getElementById('but6') //Variavel para acessar e ter controle sobre Sexto Campo
-            var but7 = window.document.getElementById('but7') //Variavel para acessar e ter controle sobre Setimo Campo
-              var but8 = window.document.getElementById('but8') //Variavel para acessar e ter controle sobre Oitavo Campo
-               var but9 = window.document.getElementById('but9') //Variavel para acessar e ter controle sobre Nono Campo
-                var jogador = window.document.getElementById('jogador') //Variavel para acessar e ter controle Décimo  Campo
-                  var jogador1 = window.document.getElementById('jogador1') //Variavel para acessar e ter controle sobre Décimo Primeiro Campo 
-                   var a = 0
-                     var b = 0
-                      var c = 0
-                       var d = 0
-                        var e = 0
-                         var f = 0 
-                          var g = 0
-                           var h = 0
-                            var i = 0
-                            var a1= 0
-                             var a2= 0
-                              var a3= 0
-                               var a4= 0
-                                var a5= 0
-                                 var a6= 0
-                                  var a7= 0
-                                   var a8= 0
-                                    var a9= 0
-                                     var cont = 0
-                                     var cont1 = 0
+
+
+let but1 = window.document.getElementById('but1') // Variavel para acessar e ter controle sobre Primeiro Campo
+let but2 = window.document.getElementById('but2') //Variavel para acessar e ter controle sobre Segundo campo
+let = window.document.getElementById('but3') //Variavel para acessar e ter controle sobre terceiro campo
+let but4 = window.document.getElementById('but4') //Variavel para acessar e ter controle sobre quarto Campo
+let but5 = window.document.getElementById('but5') //Variavel para acessar e ter controle sobre Quinto Campo
+let but6 = window.document.getElementById('but6') //Variavel para acessar e ter controle sobre Sexto Campo
+let but7 = window.document.getElementById('but7') //Variavel para acessar e ter controle sobre Setimo Campo
+let but8 = window.document.getElementById('but8') //Variavel para acessar e ter controle sobre Oitavo Campo
+let but9 = window.document.getElementById('but9') //Variavel para acessar e ter controle sobre Nono Campo
+let jogador = window.document.getElementById('jogador') //Variavel para acessar e ter controle Décimo  Campo
+let jogador1 = window.document.getElementById('jogador1') //Variavel para acessar e ter controle sobre Décimo Primeiro Campo 
+let a = 0
+let b = 0
+let c = 0
+let d = 0
+let e = 0                      
+let f = 0                         
+let g = 0                          
+let h = 0
+let i = 0
+let a1= 0
+let a2= 0
+let a3= 0           
+let a4= 0                       
+var a5= 0                           
+var a6= 0                                
+var a7= 0                                
+var a8= 0                                 
+var a9= 0                                  
+var cont = 0                                  
+var cont1 = 0
       /**
        * função que fará o programa dar um vencedor caso seja o 'x' que complete o objetivo do jogo
  
@@ -39,23 +41,18 @@ function resultX(){
     var jogador1 = window.document.getElementById('jogador1')
     var res = window.document.getElementById('res')
     var nome1=jogador.value
-    cont1 = 1
-
-                 
-       alert('Vencedor!!!')
-          res.innerHTML+=`Vencedor: ${nome1}`
-
+      cont1 = 1          
+      alert('Vencedor!!!')
+      res.innerHTML+=`Vencedor: ${nome1}`
 }
-/**
- 
- */
+
 function resultO(){
     var jogador = window.document.getElementById('jogador')
-          var res = window.document.getElementById('res')
-              var nome2=jogador1.value
-                  alert('Vencedor!!!')
-                     res.innerHTML+=`Vencedor: ${nome2}`
-                     cont1 = 1
+    var res = window.document.getElementById('res')
+    var nome2=jogador1.value
+              alert('Vencedor!!!')
+              res.innerHTML+=`Vencedor: ${nome2}`
+              cont1 = 1
 }
 /**
  
@@ -71,11 +68,10 @@ function Empati(){
     alert('Deu Impate')
     res.innerHTML+=(`Deu Impate entre ${nome1} X ${nome2}`)
   }
-
 }
 function gerar1(){
     var jogador = window.document.getElementById('jogador')
-         var jogador1 = window.document.getElementById('jogador1')
+    var jogador1 = window.document.getElementById('jogador1')
 
          if(jogador.value.length==0 || jogador1.value.length==0){ 
               alert('[ERRO] Add Os jogadores !!!')
@@ -84,7 +80,7 @@ function gerar1(){
                     
                  if(a == 0){
                         a++
-                  if(cont%2 == 0){
+                   if(cont%2 == 0){
                            but1.value = " X "
                            cont ++
                                  a1 = 1
