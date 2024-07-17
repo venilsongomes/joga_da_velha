@@ -73,12 +73,10 @@ function gerar1(){
     var jogador = window.document.getElementById('jogador')
     var jogador1 = window.document.getElementById('jogador1')
 
-         if(jogador.value.length==0 || jogador1.value.length==0){ 
+       if(jogador.value.length==0 || jogador1.value.length==0){ 
               alert('[ERRO] Add Os jogadores !!!')
         }else{
-             
-                    
-                 if(a == 0){
+               if(a == 0){
                         a++
                    if(cont%2 == 0){
                            but1.value = " X "
@@ -280,28 +278,29 @@ function gerar5(){
                   cont++
                   a5 = 2
              }
-             if(a2==1 && a5==1 && a8==1){
-              but1.value=but9.value=but7.value=but4.value=but6.value=but3.value='    '
+            if(a2==1 && a5==1 && a8==1){
+               but1.value=but9.value=but7.value=but4.value=but6.value=but3.value='    '
                  resultX()
-                  }else if(a5==1 && a6==1 && a4==1){
+
+            }else if(a5==1 && a6==1 && a4==1){
                     but1.value=but2.value=but3.value=but7.value=but8.value=but9.value='    '
                       resultX()
-                         }else if(a1==1 && a5==1 && a9==1){
+            }else if(a1==1 && a5==1 && a9==1){
                             but1.value=but2.value=but7.value=but4.value=but5.value=but8.value='    '
                              resultX()
-                               }else if(a3==1 && a5==1 && a7==1){
+             }else if(a3==1 && a5==1 && a7==1){
                                 but1.value=but2.value=but9.value=but4.value=but6.value=but8.value='    '
                                  resultX()
-                                   } else if(a2==2 && a5==2 && a8==2){
+             } else if(a2==2 && a5==2 && a8==2){
                                      but1.value=but9.value=but7.value=but4.value=but6.value=but3.value='   '
                                        resultO()
-                                         }else if(a5==2 && a6==2 && a4==2){
+             }else if(a5==2 && a6==2 && a4==2){
                                            but1.value=but2.value=but3.value=but7.value=but8.value=but9.value='   '
                                             resultO()
-                                              }else if(a1==2 && a5==2 && a9==2){
+             }else if(a1==2 && a5==2 && a9==2){
                                                 but1.value=but2.value=but7.value=but4.value=but5.value=but8.value='   '
                                                  resultO()
-                                                  }else if(a3==2 && a5==2 && a7==2){
+             }else if(a3==2 && a5==2 && a7==2){
                                                     but1.value=but2.value=but9.value=but4.value=but6.value=but8.value='   '
                                                      resultO()
                                                      }else{
