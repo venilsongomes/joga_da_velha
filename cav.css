@@ -1,24 +1,26 @@
-section{
-    
-    background-color: rgb(119, 0, 255);
+
+.jog{
+    background-color:#612983;
+    text-align: center;
     width: 300px;
     margin: auto;
     padding: 15px;
     box-shadow: 3px 5px 10px black;
     border-radius: 10px;
-    text-align: center;
-   
+}
+.bot{
+    background-color:#612983;
+    text-align:center;
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
 }
 header{
-    color: rgb(139, 0, 19);
+    color: white;
     text-align: center;
 }
-footer{
-    color:black;
-    text-align: center;
-    font-style: italic;
-    
-}div{
+div{
    
     color: rgb(250, 250, 250);
 }input{
@@ -27,4 +29,16 @@ footer{
 
 .tatu{
     text-align: right;
+}
+
+body{
+    background-color:#005C53 ;
+     
+}
+footer{
+    position: absolute; /* */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
 }
