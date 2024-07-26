@@ -2,7 +2,7 @@
 
 let but1 = window.document.getElementById('but1') // Variavel para acessar e ter controle sobre Primeiro Campo
 let but2 = window.document.getElementById('but2') //Variavel para acessar e ter controle sobre Segundo campo
-let = window.document.getElementById('but3') //Variavel para acessar e ter controle sobre terceiro campo
+let but3 = window.document.getElementById('but3') //Variavel para acessar e ter controle sobre terceiro campo
 let but4 = window.document.getElementById('but4') //Variavel para acessar e ter controle sobre quarto Campo
 let but5 = window.document.getElementById('but5') //Variavel para acessar e ter controle sobre Quinto Campo
 let but6 = window.document.getElementById('but6') //Variavel para acessar e ter controle sobre Sexto Campo
@@ -31,14 +31,13 @@ var a8= 0
 var a9= 0                                  
 var cont = 0                                  
 var cont1 = 0
-      /**
-       * função que fará o programa dar um vencedor caso seja o 'x' que complete o objetivo do jogo
- 
- */
+let click1 = 0
+     
+function reload(){
+  window.location.reload(true)
+}
 function resultX(){
 
-    var jogador = window.document.getElementById('jogador')
-    var jogador1 = window.document.getElementById('jogador1')
     var res = window.document.getElementById('res')
     var nome1=jogador.value
       cont1 = 1          
@@ -47,19 +46,29 @@ function resultX(){
 }
 
 function resultO(){
-    var jogador = window.document.getElementById('jogador')
-    var res = window.document.getElementById('res')
+    
     var nome2=jogador1.value
               alert('Vencedor!!!')
               res.innerHTML+=`Vencedor: ${nome2}`
               cont1 = 1
 }
-/**
- 
- */
+
+ function vamoscomecar(){
+  var x = jogador.value
+  var y = jogador1.value
+  if(x == 0 || y == 0){
+      alert(' Vamos adicionar os jogadores !!!')
+  }else{
+    var vc = window.document.getElementById('vmos')
+    click1 = 1
+    vc.innerHTML= `Vamos Começar: ${x} X ${y}`
+  }
+  
+  
+ }
+  
 function Empati(){
-    var jogador = window.document.getElementById('jogador')
-    var jogador1 = window.document.getElementById('jogador1')
+    
     var res = window.document.getElementById('res')
     var nome1=jogador.value
     var nome2 = jogador1.value
@@ -70,42 +79,43 @@ function Empati(){
   }
 }
 function gerar1(){
-    var jogador = window.document.getElementById('jogador')
-    var jogador1 = window.document.getElementById('jogador1')
-
-       if(jogador.value.length==0 || jogador1.value.length==0){ 
+  var x = jogador
+  var y = jogador1
+  var z = click1
+ 
+       if(x.length == 0 || y.length == 0 || z == 0){ 
               alert('[ERRO] Add Os jogadores !!!')
         }else{
+             
                if(a == 0){
                         a++
                    if(cont%2 == 0){
                            but1.value = " X "
                            cont ++
                                  a1 = 1
-        
                      }else{
                          but1.value = " O "
                           cont++
                           a1 = 2
-                          }
+                                 }
 
                           if(a1==1 && a2==1 && a3==1){
                             but4.value=but5.value=but6.value=but7.value=but8.value=but9.value='  '
                             resultX()
                                
-                             }else if (a1==1 && a5==1 && a9==1){
-                                but4.value=but2.value=but6.value=but7.value=but8.value=but3.value='  '
-                                resultX()
-                                 }else if( a1==1 && a4==1 && a7==1 ){
+                         }else if (a1==1 && a5==1 && a9==1){
+                             but4.value=but2.value=but6.value=but7.value=but8.value=but3.value='  '
+                             resultX()
+                        }else if( a1==1 && a4==1 && a7==1 ){
                                      but2.value=but3.value=but5.value=but6.value=but8.value=but9='  '
                                     resultX()
-                                   }else if(a1==2 && a2==2 && a3==2){
+                        }else if(a1==2 && a2==2 && a3==2){
                                     but4.value=but5.value=but6.value=but7.value=but8.value=but9.value='  '
                                     resultO()
-                                       }else if (a1==2 && a5==2 && a9==2){
+                        }else if (a1==2 && a5==2 && a9==2){
                                         but4.value=but2.value=but6.value=but7.value=but8.value=but3.value='  '
                                         resultO()
-                                         }else if(a1==2 && a4==2 && a7==2){
+                        }else if(a1==2 && a4==2 && a7==2){
                                             but2.value=but3.value=but5.value=but6.value=but8.value=but9='  '
                                            resultO()
                         } else{
@@ -119,17 +129,15 @@ function gerar1(){
     }
      
 }
-/**
- 
- */
+
 function gerar2(){
-    var jogador = window.document.getElementById('jogador')
-            var jogador1 = window.document.getElementById('jogador1')
-            if(jogador.value.length==0 || jogador1.value.length==0){ 
+  var x = jogador.value
+  var y = jogador1.value
+  var z = click1
+ 
+       if(x.length == 0 || y.length == 0 || z == 0){  
               alert('[ERRO] Add Os jogadores !!!')
-        }else{
-                
-                    
+        }else{     
                  if(b == 0){
                         b++
                   if(cont%2 == 0){
@@ -164,13 +172,13 @@ function gerar2(){
               }
         }
 }
-/**
- 
- */
+
 function gerar3(){
-    var jogador = window.document.getElementById('jogador')
-            var jogador1 = window.document.getElementById('jogador1')
-            if(jogador.value.length==0 || jogador1.value.length==0){ 
+  var x = jogador.value
+  var y = jogador1.value
+  var z = click1
+ 
+       if(x.length == 0 || y.length == 0 || z == 0){ 
               alert('[ERRO] Add Os jogadores !!!')
         }else{
                     
@@ -213,14 +221,13 @@ function gerar3(){
                                }
                }
 }
-/**
- 
- */
+
 function gerar4(){
-    var jogador = window.document.getElementById('jogador')
-            var jogador1 = window.document.getElementById('jogador1')
-              
-            if(jogador.value.length==0 || jogador1.value.length==0){ 
+  var x = jogador.value
+  var y = jogador1.value
+  var z = click1
+ 
+       if(x.length == 0 || y.length == 0 || z == 0){ 
               alert('[ERRO] Add Os jogadores !!!')
         }else{
             
@@ -256,13 +263,13 @@ function gerar4(){
                                    }
                                   }
 }
-/**
- 
- */
+
 function gerar5(){
-    var jogador = window.document.getElementById('jogador')
-            var jogador1 = window.document.getElementById('jogador1')
-            if(jogador.value.length==0 || jogador1.value.length==0){ 
+  var x = jogador.value
+  var y = jogador1.value
+  var z = click1
+ 
+       if(x.length == 0 || y.length == 0 || z == 0){ 
               alert('[ERRO] Add Os jogadores !!!')
         }else{
                     
@@ -312,13 +319,13 @@ function gerar5(){
                                                       }
                                                     }
 }
-/**
- 
- */
+
 function gerar6(){
-    var jogador = window.document.getElementById('jogador')
-            var jogador1 = window.document.getElementById('jogador1')
-            if(jogador.value.length==0 || jogador1.value.length==0){ 
+  var x = jogador.value
+  var y = jogador1.value
+  var z = click1
+ 
+       if(x.length == 0 || y.length == 0 || z == 0){ 
               alert('[ERRO] Add Os jogadores !!!')
         }else{
                     
@@ -356,13 +363,13 @@ function gerar6(){
       }
     }
 }
-/**
- 
- */
+
 function gerar7(){
-    var jogador = window.document.getElementById('jogador')
-            var jogador1 = window.document.getElementById('jogador1')
-            if(jogador.value.length==0 || jogador1.value.length==0){ 
+  var x = jogador.value
+  var y = jogador1.value
+  var z = click1
+ 
+       if(x.length == 0 || y.length == 0 || z == 0){ 
               alert('[ERRO] Add Os jogadores !!!')
         }else{
                     
@@ -410,13 +417,13 @@ function gerar7(){
       }
     }
 }
-/**
- 
- */
+
 function gerar8(){
-    var jogador = window.document.getElementById('jogador')
-            var jogador1 = window.document.getElementById('jogador1')
-            if(jogador.value.length==0 || jogador1.value.length==0){ 
+  var x = jogador.value
+  var y = jogador1.value
+  var z = click1
+ 
+       if(x.length == 0 || y.length == 0 || z == 0){ 
               alert('[ERRO] Add Os jogadores !!!')
         }else{
                     
@@ -456,14 +463,14 @@ function gerar8(){
       }
     }
 }
-/**
- 
- */
+
 function gerar9(){
-    var jogador = window.document.getElementById('jogador')
-    var jogador1 = window.document.getElementById('jogador1')
-    if(jogador.value.length==0 || jogador1.value.length==0){ 
-      alert('[ERRO] Add Os jogadores !!!')
+  var x = jogador.value
+  var y = jogador1.value
+  var z = click1
+ 
+       if(x.length == 0 || y.length == 0 || z == 0){ 
+              alert('[ERRO] Add Os jogadores !!!')
 }else{
             
             
@@ -508,8 +515,3 @@ function gerar9(){
     }
 }
 }
-
-
-/**
- 
- */

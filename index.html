@@ -9,17 +9,21 @@
     <header>
         <h1> Jogo Da Velha !!! </h1>
           </header>
-          <div>
-            <section>
-                <b>Jogador1: <input type="string" name="jogador" id="jogador">
-                   
-         <p></p>
-        Jogador2: <input type="string" name="jogador1" id="jogador1">
-    </b>
-        </div>
+          <p></p>
+          <div class="jogador">
+            <section id="vmos">
+                <b>   Jogador1: <input type="string" name="jogador" id="jogador">
+                    <p></p>
+                      Jogador2: <input type="string" name="jogador1" id="jogador1"> </b>
+                      <p> </p>
+
+                      <div class="tatu">
+                        <input type="button" value="Start" onclick="vamoscomecar()" id="vamosCV">
+                      </div>
+          </div>
             </section>
-        </div>
-        <p></p>
+           <p></p>
+
           <section>
             <div id="res">
                 <h1> 
@@ -35,6 +39,9 @@
                     <input  type="button" value="  " onclick="gerar8()"id="but8">
                     <input  type="button" value="  " onclick="gerar9()"id="but9">
                 </h1>
+            </div>
+            <div class="reload">
+              <input type="button" value="Reload" onclick="reload()" id="reload">
             </div>
         </section>
            <footer>
